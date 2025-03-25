@@ -79,8 +79,15 @@ const sendMoney = 3000;
 // delivery fe 50 + product er dam 300
 const pay = 350;
 
- 
+
+// gift for eid salami.
+const gift = 100; 
 
 
+const favFood = "biriyani";
+
+const City = "dhaka";
+const city = "chittagong";
+console.log(city, City);
 
 
