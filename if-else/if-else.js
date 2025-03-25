@@ -237,20 +237,70 @@ if (gotInvitation == true) {
 }
 
 
+const tea = true;
+const biscit = false;
+if (tea === false) {
+    if (biscit === false) {
+        console.log('only tea ready');
+    }
+} else {
+    console.log("boshe boshe star jalsha dekhon");
+}
 
 
+const isActive = true;
+const subscription = "premium";
+if (isActive === true) {
+    if (subscription === "premium") {
+        console.log("enjoy premium feature");
+    }
+} else {
+    console.log("watch free version");
+}
+
+const foodDeliveryApp = false;
+const hasFood = false;
+if (hasFood === true) {
+    console.log("khabar gorom kor");
+} else if (foodDeliveryApp === true) {
+    console.log("order food");
+} else {
+    console.log("ajke ami roja.");
+}
 
 
+const totalPeople = 101;
+const gift101 = true;
+if (totalPeople > 100) {
+    if (gift101 === true) {
+        console.log("let's party all night");
+    }
+} else {
+    console.log("i will party with myself");
+}
 
 
+const shoping = 3000;
+let cashBack = null;
+shoping >= 3000 ? cashBack = 500:cashBack = 0;
+console.log(cashBack);
+
+const myAge = 15;
+myAge >= 15 ? console.log("Teenager") : console.log("child");
+
+const isLoggedIn = true;
+isLoggedIn ? console.log("Welcome Back") : console.log("Please Login");
+
+const oilTank = 'full';
+oilTank === "full" ? console.log("ready for a long drive") : console.log("fill the tank");
+
+const isPassed = true;
+isPassed ? console.log("party time") : console.log("next semester e serious study korbo.");
 
 
+const sunny = false;
+sunny || console.log('stay home');
 
-
-
-
-
-
-
-
+const expensive = false;
+!expensive && console.log("i will buy this item");
 
