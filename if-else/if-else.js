@@ -187,6 +187,70 @@ if (totalPage < 100) {
 }
 
 
+const temp = 15;
+if (temp <= 0) {
+    console.log("ice");
+}
+else if (temp > 0 && temp < 20) {
+    console.log("cool cool");
+}
+else if (temp > 20) {
+    console.log("hot hot");
+}
+
+const level = 14;
+if (level < 10) {
+    console.log("novice");
+} else if (level > 10 && level < 50) {
+    console.log("expert");
+} else if (level > 50) {
+    console.log("Pro Gamer");
+}
+
+// movie & popcorn
+const money = 400;
+const popcornPrice = 40;
+if (money >= 300) {
+    console.log("going to watch movie");
+    if (popcornPrice <= 50) {
+        console.log
+            ("buying popcorn");
+    }
+    else {
+        console.log("popcorn is expensive");
+    }
+} else {
+    console.log("home alone");
+}
+
+
+const gotInvitation = true;
+const pocketMoney = 1100;
+if (gotInvitation == true) {
+    if (pocketMoney >= 1000) {
+        console.log("buying a gift");
+    } else {
+        console.log("going withoug gift");
+    }
+} else {
+    console.log('remove from friend list');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
