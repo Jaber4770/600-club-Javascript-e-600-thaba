@@ -31,5 +31,48 @@ console.log(studyTable[7]);
 
 
 
+const numbersArray = [10, 20, 30, 40, 50];
+numbersArray.push(60);
+console.log(numbersArray);
 
+
+const names = ["sojib", "sagor", "shakib", "sohel"];
+names.push("somon");
+console.log(names);
+
+const installedGame = ['game1', 'game2', 'game3', 'game4'];
+installedGame.pop();
+console.log(installedGame);
+
+const numberArray = [24, 36, 48, 60];
+numberArray.unshift(12);
+console.log(numberArray);
+
+const bookList = ['book1', 'book2', "book3", 'book4', 'book5'];
+bookList.shift();
+console.log(bookList);
+
+const fruitsArray = ["apple", 'banana', 'mango', 'lichu'];
+if (fruitsArray.includes('mango')) {
+    console.log("mango ache");
+} else {
+    console.log("mango nai, gache uth.");
+}
+
+
+const namesUnknown = ['babul', 'alif', 'choton'];
+console.log(namesUnknown.indexOf("babul"));
+
+const frndNames = ['rimon', 'rifat', 'rajib'];
+console.log(frndNames.indexOf('rifat'));
+
+const cities = ["dhaka", "chittagong", 'sylhet'];
+cities.push("rajshahi");
+console.log(cities.includes("RajShahi"));
+
+const elements = ["dighi", 'megh', "bristy", "borsha"];
+elements.includes("bristy") ? console.log("i need umbrella") : console.log("no rain no pain");
+
+const favGames = ["cricket", "football", "vallayball"];
+console.log(favGames.includes("badmintan"));
 
