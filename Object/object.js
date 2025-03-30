@@ -134,6 +134,7 @@ const family = {
 console.log(family.mother.age);
 console.log(family['fathe.r'].age);
 console.log("age sum: ", family.mother.age + family['fathe.r'].age);
+console.log("age sum: ", family.mother.age + family['fathe.r'].age);
 
 
 
