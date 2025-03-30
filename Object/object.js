@@ -136,8 +136,88 @@ console.log(family['fathe.r'].age);
 console.log("age sum: ", family.mother.age + family['fathe.r'].age);
 console.log("age sum: ", family.mother.age + family['fathe.r'].age);
 
+const book = {
+    author: 'jack',
+    name: 'The Jack Sargey',
+    price: 300,
+    publishYear: 2029
+}
+console.log("keys: ", Object.keys(book), "values: ", Object.values(book));
 
 
+const article = {
+    title: 'learning JS',
+    category: "programming"
+};
+if (article.hasOwnProperty("author")) {
+    console.log("this object has Author property.");
+}
+else {
+    console.log("this object does not author property.");
+}
+
+
+const Laptop = {
+    brand: 'dell',
+    model: "inspiration",
+    price: 45000
+}
+for (let key in Laptop) {
+    console.log(key, Laptop[key]);
+}
+
+
+const Phone = {
+    brand: 'samsung',
+    model: 'galaxy s21',
+    price: '85000'
+}
+const keys = Object.keys(Phone);
+for (let key of keys) {
+    let value = Phone[key];
+    console.log(key, value);
+}
+
+
+const Bike = {
+    brand: "hero",
+    price: '120000',
+    model: 'splendor'
+}
+console.log(Object.values(Bike));
+
+const books = {
+    book1: 'harry potter',
+    book2: 'the hobbit',
+    book3: "game of throne"
+}
+for (let book in books) {
+    console.log("book name:", books[book]);
+}
+
+
+const numbers = {
+    a: 10,
+    b: 20,
+    c: 30,
+    d:40
+}
+
+let numSum = 0;
+for (let number in numbers) {
+    const singleValue = numbers[number];
+    numSum += singleValue;
+}
+console.log("total of object value: ", numSum);
+
+
+
+const Player = {
+    name: "messi",
+    team: 'argentina',
+    goals: 91
+}
+console.log(Object.values(Player));
 
 
 
