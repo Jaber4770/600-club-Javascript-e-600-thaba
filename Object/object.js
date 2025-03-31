@@ -220,6 +220,100 @@ const Player = {
 console.log(Object.values(Player));
 
 
+const building = {
+    floors: 10,
+    address: {
+        street: "main road",
+        city:"dhaka"
+    },
+    type: 'commercial'
+}
+
+for (const key in building) {
+    console.log(building[key]);
+}
+
+
+const headPhone = {
+    brand: 'sony',
+    price: '3000',
+    color: 'red',
+    hiji: "hijibiji"
+}
+
+console.log(headPhone);
+delete headPhone.hiji;
+Object.seal(headPhone);
+console.log(headPhone);
+headPhone.brand = "Sony"
+delete headPhone.price;
+headPhone.calble = false,
+console.log(headPhone);
+
+
+const PLAYER = {
+    name: "messi",
+    goals: 800,
+    club: "inter miami"
+}
+Object.freeze(PLAYER);
+console.log(PLAYER);
+PLAYER.goals = 900;
+console.log(PLAYER);
+
+
+
+const LeoMesi = {
+    name: "messi",
+    goals: 800,
+    club: 'inter miami'
+}
+
+console.log(LeoMesi)
+Object.freeze(LeoMesi);
+LeoMesi.club = "bc";
+console.log(LeoMesi)
+
+const BOOK = {
+    title: 'harry potter',
+    author: "jk rowling",
+    page: 500
+}
+Object.seal(BOOK);
+console.log(BOOK)
+BOOK.author = 'JK ROWLING';
+console.log(BOOK)
+
+
+const gadget = {
+    name: 'iPhone',
+    price: '120000',
+    color: 'black'
+}
+console.log(gadget);
+delete gadget.price;
+console.log(gadget);
+
+
+const animal = {
+    name: 'tiger',
+    location: 'sundarban'
+}
+console.log(animal)
+Object.freeze(animal);
+animal.location = "bandarban";
+console.log(animal)
+
+
+const food = {
+    name: 'Pizza',
+    price: '500',
+    size: 'large'
+}
+console.log(food);
+Object.seal(food);
+food.price = 550;
+console.log(food);
 
 
 
