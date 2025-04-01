@@ -344,3 +344,4 @@ function dividedBy3(array) {
     return sum;
 }
 console.log(dividedBy3([11, 22, 31, 90, 34, 565, 64, 75, 60, 58, 59, 99, 55]));
+
