@@ -146,7 +146,7 @@ function findOddNumAndMultiply(array) {
         if (num % 2 !== 0) {
             const value = num * 2;
             newArray.push(value);
-       }
+        }
     }
     return newArray;
 }
@@ -155,7 +155,56 @@ console.log("2x of odd number array is: ", findOddNumAndMultiply(numAray));
 
 
 
+function findOddNum(array) {
+    let oddNum = [];
+    for (let num of array) {
+        if (num % 2 !== 0) {
+            oddNum.push(num);
+        }
+    }
+    if (oddNum.length) {
+        return "Odd numbers found!";
+    } else {
+        return "No odd numbers found!";
+    }
+}
+const findOddOrEven = [12, 23, 324, 34, 5, 43, 45, 67, 89, 8, 77];
+console.log(findOddNum(findOddOrEven));
 
+
+
+function findAvgOfOddNum(array) {
+    let oddNumSum = 0;
+    let oddNumArry = [];
+    for (let num of array) {
+        if (num % 2 !== 0) {
+            oddNumArry.push(num);
+        }
+    }
+    for (let oddNum of oddNumArry) {
+        oddNumSum += oddNum;
+    }
+    const OddAvg = oddNumSum / oddNumArry.length;
+    const twoDecimal = parseFloat(OddAvg.toFixed(2));
+    return twoDecimal;
+}
+const findOddAvg = [12.543, 23.22, 324.5454, 34.45654, 5.4, 43.879, 45.5454, 67.369, 89.1234, 8.357, 77.358];
+console.log(findAvgOfOddNum(findOddAvg));
+
+
+
+function OddToEvenNum(array) {
+    let evenArry = [];
+    for (let num of array) {
+        if (num % 2 !== 0) {
+            const newNum = num - 1;
+            evenArry.push(newNum);
+        }
+    }
+    return evenArry;
+}
+const oddToEven = [12, 23, 324, 34, 5, 43, 45, 67, 89, 8, 77];
+console.log(OddToEvenNum(oddToEven));
 
 
 
