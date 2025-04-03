@@ -208,6 +208,20 @@ console.log(OddToEvenNum(oddToEven));
 
 
 
+// remove duplicate
+function removeDuplicate(array) {
+    const newArray = [];
+    for (let item of array) {
+        if (newArray.includes(item) === false) {
+            newArray.push(item);
+        }
+    }
+    return newArray;
+}
+const duplicateArray = [1, 5, 61, 87, 5, 7, 5, 81, 61];
+console.log("Fresh array: ", removeDuplicate(duplicateArray));
+
+
 
 
 
