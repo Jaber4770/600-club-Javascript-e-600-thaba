@@ -122,4 +122,4 @@ const studentName = {
     age: 21,
     results: [80, 88, 98]
 }
-console.log(`student name: ${studentName.name} age: ${studentName.age} his avarage marks is: ${(studentName.results[0] + studentName.results[1] + studentName.results[2]) / 3}`);
+console.log(`student name: ${studentName.name} age: ${studentName.age} his avarage marks for 3 subject is: ${(studentName.results[0] + studentName.results[1] + studentName.results[2]) / 3}`);
