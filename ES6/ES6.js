@@ -79,3 +79,47 @@ console.log(salaryAndTax({ salary: 100000, tax: 20 }));
 
 
 
+// -------------template string----------
+console.log(`The diffrence between 100 and 20 is: ${100 - 20}`);
+
+
+const employee = {
+    name: "jack",
+    age: 23,
+    salary: 100000
+}
+console.log(`The developer ${employee.name} age ${employee.age} got salary ${employee.salary}`);
+
+
+
+const fruits = ['mango', 'banana', 'jackfruit'];
+console.log(`my fav fruits is: ${fruits[0]}, ${fruits[1]}, ${fruits[2]}`);
+
+
+
+const a = 50;
+const b = 10;
+console.log(`the division of a and b is ${a / b}`);
+
+
+
+const person = {
+    firstName: "amit",
+    lastname: 'Kumar'
+}
+console.log(`Full Name: ${person.firstName} ${person.lastname}`);
+
+
+
+
+const animal = ["cat", "dog", "elephant"];
+console.log(`my favorite animal are ${animal[0]}, ${animal[1]} and ${animal[2]}`);
+
+
+
+const studentName = {
+    name: 'Jack',
+    age: 21,
+    results: [80, 88, 98]
+}
+console.log(`student name: ${studentName.name} age: ${studentName.age} his avarage marks is: ${(studentName.results[0] + studentName.results[1] + studentName.results[2]) / 3}`);
