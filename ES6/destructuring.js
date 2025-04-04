@@ -75,7 +75,7 @@ findProfession(teacher);
 
 
 {
-    const Products = ({name, ...rest}) => {
+    const Products = ({ name, ...rest }) => {
         console.log(name);
         console.log(rest);
     }
@@ -90,7 +90,7 @@ findProfession(teacher);
 
 
 {
-    const title = ({ title, ...obj }) =>{
+    const title = ({ title, ...obj }) => {
         console.log(title);
         console.log(obj);
     }
@@ -105,7 +105,7 @@ findProfession(teacher);
 }
 
 {
-    const programmer = ({ language, specialty, ...other })=>{
+    const programmer = ({ language, specialty, ...other }) => {
         console.log(language, specialty);
         console.log(other);
     }
@@ -154,3 +154,54 @@ findProfession(teacher);
 
 
 
+{
+    const technology = ['condition', 'array', 'loop'];
+    const newArray = ['variable', ...technology];
+    console.log(newArray);
+}
+
+{
+    const fruits = ['apple', "banana", "mango"]
+    const myFruits = [...fruits, 'papaya', 'orange'];
+    console.log(myFruits);
+}
+
+{
+    const frontEnd = ['javascript'];
+    const bakcEnd = ['node.js'];
+    const database = ['MongoDB'];
+    console.log([...frontEnd, ...bakcEnd, ...database]);
+}
+
+{
+    const website = {
+        name: 'mysite',
+        type: 'e-commerce',
+        stus: 'active'
+    }
+    console.log(website);
+    const newVersion = { ...website, theme: 'dark' };
+    console.log(newVersion);
+}
+
+{
+    const young = {
+        name: 'arif',
+        age: 30,
+        country: 'B Baria'
+    }
+    console.log(young);
+    const newYoung = { ...young };
+    console.log(newYoung);
+    const { country, ...other } = young;
+    console.log(other);
+}
+
+{
+    const car = { make: 'toyota', model: 'corolla', year: 2020 };
+    const newCar = { ...car };
+    console.log(car);
+    console.log(newCar);
+    const updateCar = { ...car, year: 2032 }
+    console.log(updateCar);
+}
