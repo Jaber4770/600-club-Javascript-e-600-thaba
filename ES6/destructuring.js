@@ -193,8 +193,8 @@ findProfession(teacher);
     console.log(young);
     const newYoung = { ...young };
     console.log(newYoung);
-    const { country, ...other } = young;
-    console.log(other);
+    const { country, ...rest } = young;
+    console.log(rest);
 }
 
 {
@@ -205,3 +205,14 @@ findProfession(teacher);
     const updateCar = { ...car, year: 2032 }
     console.log(updateCar);
 }
+
+// -----------------------------------------------
+// Import and Export:
+/***
+ * 1. Export: jokhn amra code er ekta part/ongsho/portion onno kono folder e use korte chai tokhn export kori.
+ * 1.2. Import: jokhn kono ekta same kaj onno kothaw kora lage tokhn sekhane amra import kori. 
+ * 2. default export: kono ekta file theke jokhi only ekta jinish send kori tokhn setake default export korte pari or ekadik jinish export korleo je kono ekta ke amra  default export korte pari. Default export korle etake onno je kono name e import kora jai. karon default export 1 tai hoi. so eta specific.
+ * 3. import/export er somoy jodi amra name change korte chai tokhn "as" keyword use kori. kono name boro  hoiye gele amra as keyword use kore setake choto korte pari.
+ * 4. name diye export korle oi jinish ta ke same name use kore import kora lagbe. and default export korle seta ke je kono name or same name use koreo import kora jai.
+ * 5. normally only ekta jinish e default export kora jai but ekadik jinish default export korte hole ekta object e kore default export kora jete pare. 
+ *  */
