@@ -125,3 +125,38 @@ const studentName = {
 console.log(`student name: ${studentName.name} age: ${studentName.age} his avarage marks for 3 subject is: ${(studentName.results[0] + studentName.results[1] + studentName.results[2]) / 3}`);
 
 console.log("problem solved");
+
+
+const firstIndex = (array) => array[0];
+console.log(firstIndex([1, 2, 3, 4]));
+
+
+const multiplyThreeNum = (num1, num2, num3) => num1 * num2 * num3;
+console.log(multiplyThreeNum(1, 2, 3));
+
+
+const unknownFunc = () => "unknown";
+console.log(unknownFunc());
+
+
+const moneyObject = {
+    pocketMoney: 300,
+    name: "jack"
+}
+const dividedBy5 = (obj) => obj.pocketMoney / 5;
+console.log(dividedBy5(moneyObject));
+
+
+
+const firstAndLast = (array) => {
+    const lastItem = array.length - 1;
+    return array[0] + array[lastItem];
+}
+const specialArray = [12, 32, 41, 45, 65, 90, 78, 84];
+console.log(firstAndLast(specialArray));
+
+
+
+const sumWithDefaultValue = (a = 10, b = 5) => a + b;
+console.log(sumWithDefaultValue());
+console.log(sumWithDefaultValue(1, 2));
