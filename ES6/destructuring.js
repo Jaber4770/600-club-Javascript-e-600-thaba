@@ -71,3 +71,86 @@ const teacher = {
     profession: "teacher"
 }
 findProfession(teacher);
+
+
+
+{
+    const Products = ({name, ...rest}) => {
+        console.log(name);
+        console.log(rest);
+    }
+    const product = {
+        name: 'laptop',
+        price: 5000,
+        brand: 'dell'
+    }
+    Products(product);
+}
+
+
+
+{
+    const title = ({ title, ...obj }) =>{
+        console.log(title);
+        console.log(obj);
+    }
+
+    const project = {
+        id: 101,
+        title: "web app",
+        budget: 3000,
+        client: "tech corp"
+    }
+    title(project);
+}
+
+{
+    const programmer = ({ language, specialty, ...other })=>{
+        console.log(language, specialty);
+        console.log(other);
+    }
+    const Programmer = {
+        name: "sophia",
+        language: "javascript",
+        experience: 5,
+        specialty: "frontend",
+        tools: "react"
+    }
+    programmer(Programmer);
+}
+
+{
+    const arraySlice = ([item1, item2, ...rest]) => {
+        console.log(item1);
+        console.log(item2);
+        console.log(rest);
+    }
+    const numbers = [10, 20, 3, 30, 300, 3000];
+    arraySlice(numbers);
+}
+
+{
+    const sumOfRest = ([num1, num2, ...rest]) => {
+        let sum = 0;
+        for (let r of rest) {
+            sum += r;
+        }
+        return sum;
+    }
+    const array = [1, 2, 3, 4, 5, 6, 6, 7, 787, 8, 3];
+    console.log(sumOfRest(array));
+}
+
+{
+    const sumOfArguments = (...rest) => {
+        let sum = 0;
+        for (let r of rest) {
+            sum += r;
+        }
+        return sum / rest.length;
+    }
+    console.log(sumOfArguments(10, 2, 3, 4, 5, 55, 66, 4, 44, 33, 322,));
+}
+
+
+
