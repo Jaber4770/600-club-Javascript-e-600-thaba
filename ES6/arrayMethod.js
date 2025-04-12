@@ -85,3 +85,45 @@ const products = [
 ]
 const totalPrice = products.reduce((acumulate, currentValue) => acumulate + currentValue.price, 0);
 console.log(totalPrice);
+
+
+const myArray = [5, 10, 15, 20, 25];
+const totalNumber = myArray.reduce((accumulate, currentValue) => accumulate + currentValue, 0);
+console.log(totalNumber);
+
+
+const myProducts = [
+    { name: 'shampo', price: 100 },
+    { name: 'soap', price: 50 },
+    { name: 'toothPaste', price: 75 },
+    { name: 'toothBrush', price: 30 },
+    { name: 'faceWash', price: 150 }
+];
+
+const totalProductPrice = myProducts.reduce((accumulate, currentValue) => accumulate + currentValue.price, 0);
+console.log(totalProductPrice);
+
+
+const productss = [
+    { name: 'pen', price: 5 },
+    { name: 'book', price: 100 }
+]
+const totalValue = productss.reduce((accumulate, currentValue) => accumulate + currentValue.price, 0);
+console.log(totalValue);
+
+
+const num = [1, 2, 3, 4, 5];
+const totalNum = num.reduce((a, c) => a + c, 0);
+console.log(totalNum);
+
+
+const nums = [10, 20, 30, 40, 50, 60];
+const highestNum = nums.reduce((a, c) => {
+    return (c > a) ? c : a;
+}, nums[0]);
+console.log(highestNum);
+
+
+const ary = [100, 200, 300, 400];
+const numOfAry = ary.reduce((accumulator, currentValue) => accumulator + currentValue, 50);
+console.log(numOfAry);
