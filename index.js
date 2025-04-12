@@ -1,1 +1,1 @@
-console.log("600-club-Javascript-e-600-thaba");
+console.log("Hello Javascript!!");
