@@ -41,3 +41,20 @@ console.log(greeting.toUpperCase());
         console.log(true);
     }
 }
+
+// =============trim======
+const drink = ' water';
+const liquid = 'water ';
+if (drink === liquid) {
+    console.log('both are smae');
+} else {
+    console.log('they are not same');
+}
+if (drink.trim() === liquid.trim()) {
+    console.log('both are smae');
+} else {
+    console.log('they are not same');
+}
+
+
+
