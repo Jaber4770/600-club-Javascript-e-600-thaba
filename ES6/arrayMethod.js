@@ -66,3 +66,22 @@
     const adult = ages.every(age => age >= 18);
     console.log(adult);
 }
+// ==========================reduce================
+{
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const total = numbers.reduce((sum, num) => sum + num, 0);
+    console.log('total: ', total);
+}
+{
+    const numbers = [32, 34, 35, 36, 89, 700];
+    const total = numbers.reduce((sum, num) => sum + num, 0);
+    console.log(total);
+}
+
+const products = [
+    { id: 1, name: 'dell', price: 30000 },
+    { id: 2, name: 'hp', price: 30400 },
+    { id: 3, name: 'acer', price: 43000 }
+]
+const totalPrice = products.reduce((acumulate, currentValue) => acumulate + currentValue.price, 0);
+console.log(totalPrice);
