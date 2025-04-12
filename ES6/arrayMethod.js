@@ -127,3 +127,85 @@ console.log(highestNum);
 const ary = [100, 200, 300, 400];
 const numOfAry = ary.reduce((accumulator, currentValue) => accumulator + currentValue, 50);
 console.log(numOfAry);
+
+
+
+// ===========================================================
+{
+    const num = [1, 2, 4, 7, 6, 5, 2, 4, 3, 2, 7, 9, 8, 0, 9];
+    num.sort();
+    console.log(num);
+}
+{
+    const numbers = [50, 12, 25, 8, 15];
+    numbers.sort();
+    console.log(numbers);
+}
+{
+    const descenArray = [12, 2, 45, 9, 6];
+    descenArray.sort((a, b) => b - a);
+    console.log(descenArray);
+}
+{
+    const frndAge = [
+        { name: 'sara', age: 22 },
+        { name: 'ali', age: 29 },
+        { name: 'tariq', age: 35 }
+    ];
+    frndAge.sort((a, b) => a.age - b.age);
+    console.log(frndAge);
+}
+{
+    const names = ['nabil', 'zubayer','jack', 'sarwar', 'delwar'];
+    names.sort();
+    console.log(names);
+    names.sort((a, b) => a.length - b.length);
+    console.log(names);
+}
+
+// ============reverse=============
+{
+    const names = ["zara", 'tariq', 'amir', 'lina'];
+    names.reverse();
+    console.log(names);
+}
+{
+    const numbers = [1, 4, 9, 7];
+    numbers.reverse();
+    console.log(numbers);
+}
+{
+    const users = [
+        { name: 'ali', age: 30 },
+        { name: 'sara', age: 25 },
+        { name: 'tariq', age: 35 }
+    ];
+    console.log(users);
+    users.reverse();
+    console.log(users);
+}
+// ========splice & slice============
+{
+    const fruits = ['apple', 'banana', 'cherry', 'data'];
+    console.log(fruits);
+    const middle = fruits.slice(1, 3);
+    console.log(middle);
+}
+{
+    const cars = ['tesla', 'bmw', 'toyota', 'ford'];
+    const middleItems = cars.slice(0, 2);
+    console.log(cars);
+    console.log(middleItems);
+}
+{
+    const movieList = ['inception', 'titanic', 'joker', 'avatar', 'interstellar'];
+    console.log(movieList);
+    movieList.splice(2, 2, 'spiderman', 'batman');
+    console.log(movieList);
+}
+{
+    const players = ['messi', 'ronaldo', 'neymar', 'mbappe'];
+    console.log(players);
+    players.splice(2, 1, "halland");
+    console.log(players);
+}
